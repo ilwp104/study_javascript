@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>논리 연산자</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var a=10;
+      var b=20;
+      var c=30;
+      var d=30;
+
+      var result;
+      result = a!=b || a>d; // a랑 b 같지 않다 ||(또는) a가 b보다 크다 ---> true || false ===>  true 둘중 하나라도 참이면 true
+      document.write(result+"<br>");// true
+
+      result = a<=d && c!=a; // a가 d보다 작거나 같다 &&(그리고) c랑 a랑 다르다 ---> true && true ===>  false 두개다 참이면 true
+      document.write(result+"<br>");// true
+
+      result = c==d && c<a; // c랑 d같다 &&(그리고) c가 a보다 작다 ---> true && false ===>  false 두개 중 하나라고 거짓이면 false
+      document.write(result+"<br>");// false
+
+      result = !(c>=d) // c가 d보다 크다의 !(반대)   ---> !(true)  ===>  false 결과 값의 반대
+      document.write(result);// false
+
+    </script>
+  </body>
+</html>
