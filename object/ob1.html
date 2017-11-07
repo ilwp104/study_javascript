@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>내장 객체</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var car = new Object();
+      car.maxspeed="200km/h";
+      car.minspeed="0km/h";
+      car.weight="1t";
+      car.info=function() {
+        document.write("이 차의 최고 속도는 " + car.maxspeed + " 입니다<br>");
+        document.write("이 차의 최저 속도는 " + car.minspeed + " 입니다<br>");
+        document.write("이 차의 무게는 " + car.weight + " 입니다<br>");
+      }
+
+      document.write(car.maxspeed+"<br>");
+      document.write(car.minspeed+"<br>");
+      document.write(car.weight+"<br>");
+
+      car.info();
+
+    </script>
+  </body>
+</html>
