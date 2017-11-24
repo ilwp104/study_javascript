@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>mathMethod</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var num1 = -123;
+      var num2 = {
+          n1 : 35,
+          n2 : 256,
+          n3 : 13
+      };
+
+      var num3 = 4;
+      var num4 = 13.22;
+
+      document.write(Math.abs(num1),"<br>");//괄호안에 있는 값 절댓값으로 출력
+      document.write(Math.max(num2.n1, num2.n2, num2.n3),"<br>");//괄호 안에 있는 값중 최고 값 출력
+      document.write(Math.min(num2.n1, num2.n2, num2.n3),"<br>");//괄호 안에 있는 값중 최소 값 출력
+      document.write(Math.pow(num3,3),"<br>");//num3(4)의 3제곱 출력
+
+      document.write(Math.random(),"<br>");//0(포함) ~ 1(불포함) 까지 랜덤 출력
+      //============응용============
+      document.write(parseInt(Math.random()*10),"<br>");//0 ~ 9 까지 랜덤 출력
+
+      document.write(Math.ceil(num4),"<br>");//소수 첫번째자리에서 반올림
+      document.write(Math.floor(num4),"<br>");//소수 첫번째자리에서 무조건 반올림
+      document.write(Math.sqrt(num4),"<br>");//소수 첫번째자리에서 무조건 반내림
+      document.write(Math.PI,"<br>");//
+
+    </script>
+  </body>
+</html>
